@@ -1,47 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Orbitron:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./styles/general.css" rel="stylesheet" />
-    <link href="./styles/style.css" rel="stylesheet" />
-    <link href="./styles/queries.css" rel="stylesheet" />
-    <script src="./app.js" defer></script>
+<html lang="en" class="hydrated"><head>
+    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Orbitron:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="./styles/general.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/queries.css" rel="stylesheet">
+    <script src="./app.js" defer=""></script>
     <title>Explore the futur with the Magic Mirror</title>
   </head>
   <body>
-    <div class="counter-container">
-      <div class="counter-heading">
-        <h1>Magic Mirror</h1>
-        <p>Coming soon</p>
+    <div class="container">
+      <div class="navigation__container">
+        <nav class="navigation">
+          <a href="#" class="logo">
+            <img src="./Icons/Logo-icon.svg" alt="Logo" class="logo__img">
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#about">About us</a></li>
+            <li class="navigation__item"><a href="#product">Features</a></li>
+            <li class="navigation__item"><a href="#product">Product</a></li>
+            <li class="navigation__item">
+              <a href="#contact" class="btn">Contact</a>
+            </li>
+          </ul>
+          <button class="hamburger"></button>
+          <div class="overlay"></div>
+        </nav>
       </div>
 
-      <div class="counter">
-        <h2 class="time days">12</h2>
-        <span>:</span>
-        <h2 class="time hours">12</h2>
-        <span>:</span>
-        <h2 class="time minutes">00</h2>
-        <span>:</span>
-        <h2 class="time seconds">00</h2>
-      </div>
+      <header class="header">
+        <div class="header__text">
+          <h1>
+            <div class="first-part">
+              <span class="text">Take a step in the Future</span>
+              <div class="robots"></div>
+            </div>
+
+            <div class="second-part">
+              <span class="text">Get The</span>
+              <div class="aurora"></div>
+            </div>
+
+            <span class="uppercase">magic mirror</span>
+          </h1>
+        </div>
+        <a href="#about" class="header__btn">
+          <p class="header__btn-l">Explore</p>
+
+          <svg width="90" height="90" viewBox="0 0 90 90" fill="none" class="header__arrow" xmlns="http://www.w3.org/2000/svg">
+            <path d="M59.8116 32.9192L64.626 58.8751M64.626 58.8751L38.6701 63.6895M64.626 58.8751L25.0642 31.6931" class="header__arrow-pa" stroke="#252422" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+        <div class="header__img">
+          <img src="./Images/Hero-img.jpg" alt="">
+        </div>
+      </header>
+
+      <section id="about" class="section about">
+        <h2>About us</h2>
+        <p>
+          Back in the 90s, when the movie “The Matrix” was released, people
+          didn’t quite believe in the potentiel of technology and its
+          developement. This “disbelieve”, if we are to analyse it, was more in
+          the human capacities rather than technology’s. But, our company has
+          bet on it’s crew to create <span> THE MAGIC MIRROR </span>, an
+          <span> “ALL-in-ONE”. </span>On top of our full confidence in our
+          capacities, we, on the other hand, value the confidence put on us by
+          our dear customers. Magic Mirror team make sure that the
+          <span>"All-in-One"</span>
+          is delivered to you in the most suitable and satisfaying conditions
+          such as <span> fast shipping (48h) </span> and
+          <span>extreme attention</span> to the product so that you our dear
+          client receive it in it's best states. We are based in Settat, Morroco
+          and we ship to every corner in the state.
+        </p>
+        <a href="#product" class="btn">Discover the Magic Mirror</a>
+      </section>
+
+      <section class="section product" id="product">
+        <h2>product</h2>
+        <div class="product__container">
+          <div class="product__feature">
+            <div class="product__feature-header">
+              <img src="./Icons/SportIndoor-icon.svg" alt="">
+              <h4>Indoor Sport</h4>
+            </div>
+            <p>
+              Pratice sport in your house with visual coach assistance and
+              workout programs provided by us.
+            </p>
+          </div>
+          <div class="product__feature">
+            <div class="product__feature-header">
+              <img src="./Icons/NaturalLight-icon.svg" alt="">
+              <h4>Natural Light</h4>
+            </div>
+            <p>
+              Lighting controls option gives you ability to adjust lighting to a
+              natural one to suit your makeup necessities.
+            </p>
+          </div>
+          <div class="product__feature">
+            <div class="product__feature-header">
+              <img src="./Icons/ChangeClothes-icon.svg" alt="">
+              <h4>Smart clothing</h4>
+            </div>
+            <p>
+              With the mirror’s camera powered by AR, try your outfit virtualy
+              before wearing it or buying it online.s.
+            </p>
+          </div>
+        </div>
+
+        <div class="product__buy"></div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact__left">
+          <img src="./Icons/Logo-icon.svg" alt="Logo">
+        </div>
+        <div class="contact__form">
+          <form action="#" class="form">
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" placeholder="Farah Asekar">
+            </div>
+            <div class="form__group">
+              <label for="email">Email address</label>
+              <input type="email" name="email" id="email" placeholder="example@mail.co">
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="20" rows="6" placeholder="Your message ...."></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="section footer">
+        <a href="#" class="footer__logo">
+          <img src="./Icons/Logo-icon.svg" alt="Logo">
+        </a>
+
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Features</a></li>
+          <li><a href="#product">Product</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><ion-icon name="logo-facebook" class="icon md hydrated" role="img" aria-label="logo facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram" class="icon md hydrated" role="img" aria-label="logo instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="mail-outline" class="icon md hydrated" role="img" aria-label="mail outline"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p>© 2022 Magic Mirror. All rights reserved</p>
+      </footer>
     </div>
 
-    <div class="img-cont img-cont-1">
-      <img src="./img (1).jpeg" class="img img-1" />
-    </div>
-    <div class="img-cont img-cont-2">
-      <img src="./img (2).jpeg" class="img img-2" />
-    </div>
-    <div class="img-cont img-cont-3">
-      <img src="./img (3).jpeg" class="img img-3" />
-    </div>
-  </body>
-</html>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+</body></html>
